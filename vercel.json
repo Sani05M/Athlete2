@@ -1,13 +1,10 @@
 {
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "redirects": [],
-  "routes": [],
-  "headers": [],
+  "routes": [
+    { "src": "/.*", "dest": "/index.html" }
+  ],
   "builds": [
     {
       "src": "package.json",
