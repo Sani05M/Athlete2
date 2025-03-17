@@ -7,6 +7,7 @@ import {
   DollarSign, 
   Menu 
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const SideNavbar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -43,14 +44,15 @@ const SideNavbar = () => {
           <ul className="space-y-2">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a 
-                  href={item.href}
-                  className={`flex items-center p-3 hover:bg-orange-700 
-                    ${isExpanded ? 'justify-start px-6' : 'justify-center'}`}
-                >
-                  <item.icon className="mr-4" />
-                  {isExpanded && <span>{item.label}</span>}
-                </a>
+                
+
+<Link to={item.href} className={`flex items-center p-3 hover:bg-orange-700 
+  ${isExpanded ? 'justify-start px-6' : 'justify-center'}`}
+>
+  <item.icon className="mr-4" />
+  {isExpanded && <span>{item.label}</span>}
+</Link>
+
               </li>
             ))}
           </ul>
