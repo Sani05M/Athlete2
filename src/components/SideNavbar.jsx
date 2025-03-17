@@ -13,7 +13,6 @@ const SideNavbar = () => {
 
   const navItems = [
     { icon: Home, label: 'Dashboard', href: '/' },
-    
     { icon: BarChart2, label: 'Performance', href: '/running' },
     { icon: Shield, label: 'Injuries', href: '/Medical' },
     { icon: DollarSign, label: 'Financial', href: '/financial' },
