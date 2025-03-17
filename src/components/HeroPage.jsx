@@ -1,8 +1,9 @@
 import React from 'react';
-import { ChevronLeft, ChevronRight, Medal, Calendar, Briefcase } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Calendar, Briefcase } from 'lucide-react';
+
 import axios from 'axios';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import AppointmentPage from './Medical';
+//import AppointmentPage from './Medical';
 
 
 import SportsPage from './SportsPage';
