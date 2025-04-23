@@ -168,9 +168,12 @@ function HeroPage() {
                     {job.type}
                   </span>
                 </div>
-                <button className="mt-4 text-blue-600 font-semibold hover:text-blue-700">
-                  Apply Now →
-                </button>
+                <button
+  className="mt-4 text-blue-600 font-semibold hover:text-blue-700"
+  onClick={() => window.location.href = 'https://sportswork.co/'}
+>
+  Apply Now →
+</button>
               </div>
             ))}
           </div>
